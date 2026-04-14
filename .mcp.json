@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "greyhaven": {
+      "command": "npx",
+      "args": ["tsx", "/Users/yamijuan/Documents/Projects/Monadical/test-greyheaven/greyhaven-design-system/mcp/server.ts"]
+    }
+  }
+}
