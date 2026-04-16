@@ -16,6 +16,11 @@ export const apps: AppEntry[] = [
     description: 'Container-free, deny-by-default sandbox for AI coding agents on Linux and macOS.',
   },
   {
+    name: 'Greywall (brand-voice)',
+    path: '/greywall-with-brand',
+    description: 'Same Greywall content, rewritten through the Greyhaven brand voice validator.',
+  },
+  {
     name: 'Monadical',
     path: '/monadical',
     description: 'Full-stack software consultancy helping organizations transform in the Age of AI.',

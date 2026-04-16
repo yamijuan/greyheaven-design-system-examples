@@ -32,6 +32,7 @@ Vite + React application.
 This project uses the **Greyhaven Design System**.
 
 
+
 ## Rules
 
 - **ALWAYS use TypeScript** (`.tsx` / `.ts`). NEVER generate plain JavaScript (`.jsx` / `.js`).
@@ -75,3 +76,60 @@ If fonts aren't loaded yet, add to your global CSS:
 @font-face { font-family: 'Aspekta'; font-weight: 600; font-display: swap; src: url('/fonts/Aspekta-600.woff2') format('woff2'); }
 @font-face { font-family: 'Aspekta'; font-weight: 700; font-display: swap; src: url('/fonts/Aspekta-700.woff2') format('woff2'); }
 ```
+
+---
+
+## Brand Voice and Messaging
+
+This project generates user-facing content (marketing copy, CTAs, landing pages, product explanations, emails) and MUST follow the Greyhaven brand voice.
+
+### Brand Rules
+
+- **Before writing any user-facing copy**, read the brand skill:
+  - Claude Code / compatible tools: `.claude/skills/greyhaven-brand.md` (full voice/tone/messaging reference)
+  - Or via MCP: call `get_brand_rules()` (or a specific section: `positioning`, `axes`, `tone`, `writing-rules`, `reasoning-patterns`, `cta`, `logo`, `self-check`)
+- **Before shipping any user-facing copy**, validate it:
+  - Via MCP: call `validate_copy(text)` to lint for hype words, vague superlatives, urgency framing, and exclamation marks
+  - Or manually run the 8-item self-check list from the brand skill
+
+### Core Voice (memorize)
+
+- **Direct. Plain-spoken technical.** Write like an engineer who explains systems cleanly, without mystique or theatrics.
+- **No** hype adjectives (`revolutionary`, `cutting-edge`, `seamless`, `game-changing`, `powerful`).
+- **No** evangelism verbs (`unleash`, `transform`, `empower`, `supercharge`, `unlock`).
+- **No** sales language, urgency framing, exclamation marks.
+- **No** jargon for its own sake. Prefer plain words: "where the data goes" over "data paths"; "things the system relies on" over "dependencies".
+- **Yes** specifics, causal reasoning, concrete outcomes.
+
+### The Three Brand Axes
+
+Copy must land on the correct side of each:
+1. **Containment** — systems run inside the perimeter, nothing leaks (not cloud/SaaS narratives)
+2. **Human-centered** — built around how people actually work (not around model capabilities)
+3. **Engineered** — from real deployments and constraints (not vision-first, theatrical, speculative)
+
+### Reasoning Patterns to Use
+
+Structure explanations as:
+- **Cause → Effect**
+- **Constraint → Outcome**
+- **Observation → Explanation**
+- **Finite Scope → Concrete Result**
+
+### CTA Guidance
+
+- **Good**: "Map your first process", "See how it runs in your environment", "Review the architecture", "Get a working prototype in 48 hours"
+- **Avoid**: "Unleash the power of AI", "Transform your business", "Don't miss out!", "Get started today!"
+
+### Logo Usage
+
+Logos live in `public/logos/` after install. See the brand skill for the full rules (clearspace, minimum sizes, what to avoid).
+
+- **Full logo** (symbol + wordmark): `gh-logo-positive-full-black.svg` (light bg), `gh-logo-white.svg` (dark bg), `gh-logo-offblack.svg` (warm-neutral)
+- **Symbol only**: `gh-symbol-full-black.svg`, `gh-symbol-full-white.svg` — only when Greyhaven recognition is already established
+- **Product lockups**: `greyproxy-positive.svg`, `greywall-positive.svg`
+- **Never**: change opacity, apply new colors, stretch, rotate, apply gradients/shadows, alter the symbol-to-wordmark ratio
+
+### One-Line Test
+
+Before writing a sentence, ask: *Would an engineer who understands the system read this and feel it's accurate, direct, and free of hype?* If not, rewrite.
