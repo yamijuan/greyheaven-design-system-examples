@@ -59,12 +59,12 @@ export function ServicesSection() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {dept.capabilities.slice(0, 3).map((cap) => (
-                    <Badge key={cap} variant="tag" className="text-[10px] py-0 px-2">
+                    <Badge key={cap} variant="tag">
                       {cap}
                     </Badge>
                   ))}
                   {dept.capabilities.length > 3 && (
-                    <span className="text-[10px] text-muted-foreground">+{dept.capabilities.length - 3} more</span>
+                    <span className="text-xs text-muted-foreground self-center">+{dept.capabilities.length - 3} more</span>
                   )}
                 </div>
               </CardContent>

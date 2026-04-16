@@ -1,6 +1,7 @@
 import { Section } from '@/components/ui/section'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Code } from '@/components/ui/code'
 import {
   ShieldIcon,
   FolderLockIcon,
@@ -53,7 +54,7 @@ export function FeaturesSection() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground font-sans leading-relaxed">
-                Run your agent once with <code className="font-mono text-foreground bg-muted px-1.5 py-0.5 rounded text-xs">greywall --learning</code> to
+                Run your agent once with <Code>greywall --learning</Code> to
                 trace every filesystem path and network call it needs. Greywall auto-generates
                 a least-privilege config profile — no manual allowlisting required.
               </p>

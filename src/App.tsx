@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { PokemonRoutes } from '@/apps/pokemon/routes'
 import { GreywallRoutes } from '@/apps/greywall/routes'
 import { MonadicalRoutes } from '@/apps/monadical/routes'
+import { MonadicalMockerRoutes } from '@/apps/monadicalmocker/routes'
 import { HomePage } from '@/apps/HomePage'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Route path="/pokemon/*">{PokemonRoutes()}</Route>
       <Route path="/greywall/*">{GreywallRoutes()}</Route>
       <Route path="/monadical/*">{MonadicalRoutes()}</Route>
+      <Route path="/monadicalmocker/*">{MonadicalMockerRoutes()}</Route>
     </Routes>
   )
 }

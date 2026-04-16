@@ -7,7 +7,7 @@ export function GreywallCtaSection() {
     <div id="cta" data-section="cta">
       <CTASection
         variant="centered"
-        background="muted"
+        background="subtle"
         heading="Ready to secure your AI workflow?"
         description="Greywall is free, open source, and ready to use today. Deny-by-default sandboxing in one command."
         actions={
@@ -24,7 +24,7 @@ export function GreywallCtaSection() {
             >
               Install Now
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="secondary" size="lg" asChild>
               <a
                 href="https://docs.greywall.io"
                 target="_blank"

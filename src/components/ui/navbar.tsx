@@ -115,7 +115,7 @@ function NavbarLink({
       data-active={active || undefined}
       className={cn(
         'px-3 py-2 text-foreground transition-opacity hover:opacity-70',
-        'data-active:opacity-100',
+        'data-active:text-primary data-active:opacity-100',
         className,
       )}
       {...props}

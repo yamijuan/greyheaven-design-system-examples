@@ -42,7 +42,7 @@ export function MonadicalLayout() {
           variant="solid"
           logo={
             <NavLink
-              to="/monadical"
+              to="/"
               className="font-serif text-lg font-semibold text-foreground hover:text-primary transition-colors"
             >
               Monadical

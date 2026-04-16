@@ -3,7 +3,6 @@ import { Hero } from '@/components/ui/hero'
 import { Section } from '@/components/ui/section'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Separator } from '@/components/ui/separator'
 
 export function RegionPage({ region }: { region: Region }) {
   return (
@@ -15,27 +14,22 @@ export function RegionPage({ region }: { region: Region }) {
         subheading={`${region.generation} — ${region.tagline}`}
       />
 
-      {/* About the Region */}
       <Section title={`About ${region.name}`} width="default">
         <p className="font-serif text-base leading-relaxed text-foreground max-w-3xl">
           {region.overview}
         </p>
       </Section>
 
-      <Separator className="max-w-5xl mx-auto" />
-
-      {/* Featured Games */}
       <Section title="Featured Games" variant="highlighted" width="default">
         <div className="flex flex-wrap gap-3">
           {region.games.map((game) => (
-            <Badge key={game} variant="secondary" className="text-sm px-3 py-1">
+            <Badge key={game} variant="outline" size="lg">
               {game}
             </Badge>
           ))}
         </div>
       </Section>
 
-      {/* Legendary Pokemon */}
       <Section
         title="Legendary Pokemon"
         description="The powerful guardians and ancient forces of this region."
@@ -49,7 +43,7 @@ export function RegionPage({ region }: { region: Region }) {
                 <CardDescription>
                   <div className="flex flex-wrap gap-1.5 mt-1">
                     {pokemon.types.map((t) => (
-                      <Badge key={t} variant="default" className="text-xs">
+                      <Badge key={t} variant="default">
                         {t}
                       </Badge>
                     ))}
@@ -70,9 +64,6 @@ export function RegionPage({ region }: { region: Region }) {
         </div>
       </Section>
 
-      <Separator className="max-w-5xl mx-auto" />
-
-      {/* Mythical Pokemon */}
       <Section
         title="Mythical Pokemon"
         description="Rare and elusive Pokemon shrouded in mystery."
@@ -87,7 +78,7 @@ export function RegionPage({ region }: { region: Region }) {
                 <CardDescription>
                   <div className="flex flex-wrap gap-1.5 mt-1">
                     {pokemon.types.map((t) => (
-                      <Badge key={t} variant="default" className="text-xs">
+                      <Badge key={t} variant="default">
                         {t}
                       </Badge>
                     ))}
@@ -108,7 +99,6 @@ export function RegionPage({ region }: { region: Region }) {
         </div>
       </Section>
 
-      {/* Key Locations */}
       <Section title="Key Locations" variant="highlighted" width="default">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {region.keyLocations.map((loc) => (
@@ -124,9 +114,6 @@ export function RegionPage({ region }: { region: Region }) {
         </div>
       </Section>
 
-      <Separator className="max-w-5xl mx-auto" />
-
-      {/* Gym Leaders */}
       <Section
         title="Gym Leaders"
         description="The eight trainers standing between you and the Pokemon League."
@@ -140,7 +127,7 @@ export function RegionPage({ region }: { region: Region }) {
                   {leader.name}
                 </h3>
                 <div className="flex items-center gap-2">
-                  <Badge variant="default" className="text-xs">
+                  <Badge variant="default">
                     {leader.type}
                   </Badge>
                 </div>

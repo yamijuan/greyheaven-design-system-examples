@@ -25,7 +25,7 @@ export function HeroSection() {
             >
               Get Started
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="secondary" size="lg" asChild>
               <a
                 href="https://github.com/GreyhavenHQ/greywall"
                 target="_blank"
@@ -39,9 +39,9 @@ export function HeroSection() {
         }
       />
       <div className="flex flex-wrap justify-center gap-3 -mt-16 pb-8">
-        <Badge variant="secondary">Open Source</Badge>
-        <Badge variant="secondary">Apache 2.0</Badge>
-        <Badge variant="secondary">Linux + macOS</Badge>
+        <Badge variant="tag" size="lg">Open Source</Badge>
+        <Badge variant="tag" size="lg">Apache 2.0</Badge>
+        <Badge variant="tag" size="lg">Linux + macOS</Badge>
       </div>
     </div>
   )

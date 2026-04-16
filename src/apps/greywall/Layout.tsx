@@ -42,7 +42,7 @@ export function GreywallLayout() {
           variant="solid"
           logo={
             <NavLink
-              to="/greywall"
+              to="/"
               className="font-serif text-lg font-semibold text-foreground hover:text-primary transition-colors"
             >
               Greywall

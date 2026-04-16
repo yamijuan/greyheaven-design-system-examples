@@ -3,12 +3,12 @@ import { cva, type VariantProps } from 'class-variance-authority'
 
 import { cn } from '@/lib/utils'
 
-const sectionVariants = cva('py-16', {
+const sectionVariants = cva('py-10', {
   variants: {
     variant: {
       default: '',
-      highlighted: 'bg-card dark:bg-muted',
-      accent: 'bg-primary/5',
+      highlighted: 'bg-card my-8',
+      accent: 'bg-primary/5 my-8',
     },
     width: {
       narrow: 'max-w-3xl mx-auto',

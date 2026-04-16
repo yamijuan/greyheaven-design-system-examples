@@ -11,13 +11,13 @@ export function HeroSection() {
         variant="centered"
         background="default"
         heading={heroContent.heading}
-        subhing={heroContent.subheading}
+        subheading={heroContent.subheading}
         actions={
           <>
             <Button size="lg" asChild>
               <a href={heroContent.primaryCta.href}>{heroContent.primaryCta.label}</a>
             </Button>
-            <Button variant="outline" size="lg" asChild>
+            <Button variant="secondary" size="lg" asChild>
               <a href={heroContent.secondaryCta.href}>{heroContent.secondaryCta.label}</a>
             </Button>
           </>

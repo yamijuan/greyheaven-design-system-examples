@@ -45,7 +45,7 @@ export function PlatformSection() {
             <CardHeader>
               <div className="flex items-center gap-3 mb-1">
                 <CardTitle className="font-serif text-xl">macOS</CardTitle>
-                <Badge variant="secondary">Supported</Badge>
+                <Badge variant="tag">Supported</Badge>
               </div>
             </CardHeader>
             <CardContent>
@@ -72,7 +72,7 @@ export function PlatformSection() {
         </div>
 
         <Card className="bg-primary/5 border-primary/20">
-          <CardContent className="pt-6">
+          <CardContent>
             <p className="text-sm font-sans text-foreground leading-relaxed">
               <span className="font-semibold">Not a container.</span>{' '}
               Unlike Docker, Greywall keeps your agent in the normal local dev environment with

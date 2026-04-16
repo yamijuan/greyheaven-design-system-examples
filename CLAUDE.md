@@ -31,6 +31,7 @@ Vite + React application.
 
 This project uses the **Greyhaven Design System**.
 
+
 ## Rules
 
 - **ALWAYS use TypeScript** (`.tsx` / `.ts`). NEVER generate plain JavaScript (`.jsx` / `.js`).
@@ -50,7 +51,7 @@ This project uses the **Greyhaven Design System**.
 
 ## Component Summary
 
-37 components across 8 categories: primitives (10), layout (4), overlay (5), navigation (3), data (4), feedback (4), form (1), composition (6).
+38 components across 8 categories: primitives (11), layout (4), overlay (5), navigation (3), data (4), feedback (4), form (1), composition (6).
 
 For full component specs, props, and examples, refer to the SKILL.md file or use the MCP `get_component(name)` tool.
 

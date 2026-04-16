@@ -39,7 +39,7 @@ export function HomePage() {
                     {app.name}
                   </CardTitle>
                   <CardDescription>
-                    <Badge variant="default" className="text-xs">{app.path}</Badge>
+                    <Badge variant="default">{app.path}</Badge>
                   </CardDescription>
                 </CardHeader>
                 <CardContent>

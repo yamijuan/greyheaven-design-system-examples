@@ -20,4 +20,9 @@ export const apps: AppEntry[] = [
     path: '/monadical',
     description: 'Full-stack software consultancy helping organizations transform in the Age of AI.',
   },
+  {
+    name: 'Monadical Mocker',
+    path: '/monadicalmocker',
+    description: 'Precision-engineered API mocking environment shell with collections, environments, and mock servers.',
+  },
 ]

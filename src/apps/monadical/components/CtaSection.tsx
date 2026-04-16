@@ -18,7 +18,7 @@ export function CtaSection() {
           </Button>
         }
         secondaryCta={
-          <Button variant="outline" size="lg" asChild>
+          <Button variant="secondary" size="lg" asChild>
             <a href={ctaContent.secondaryCta.href}>{ctaContent.secondaryCta.label}</a>
           </Button>
         }
